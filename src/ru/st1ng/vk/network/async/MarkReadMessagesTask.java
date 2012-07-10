@@ -1,0 +1,59 @@
+package ru.st1ng.vk.network.async;
+
+import java.util.ArrayList;
+import java.util.EnumSet;
+import java.util.List;
+
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+
+import ru.st1ng.vk.VKApplication;
+import ru.st1ng.vk.data.ImageCache;
+import ru.st1ng.vk.model.Message;
+import ru.st1ng.vk.model.User;
+import ru.st1ng.vk.model.VkAccount;
+import ru.st1ng.vk.network.ErrorCode;
+import ru.st1ng.vk.network.JSONParser;
+import ru.st1ng.vk.network.JsonParseException;
+import ru.st1ng.vk.util.HttpUtil;
+import android.os.AsyncTask;
+
+/**
+ * @author st1ng
+ * AsyncTask for getting dialogs.
+ * Execute params:
+ * 0 - Dialog return count
+ * 1 - Dialog return offset
+ */
+
+public class MarkReadMessagesTask extends BasicAsyncTask<Message, Void, Void> {
+
+	public MarkReadMessagesTask(AsyncCallback<Void> callback) {
+		super(callback);
+	}
+
+	@Override
+	public String getMethodName() {
+		return "messages.markAsRead";
+	}
+
+	@Override
+	public Void parseResponse(String response) throws JsonParseException {
+		return null;
+	}
+
+	@Override
+	public void initNameValuePairs(ArrayList<NameValuePair> pairs, Message... params) {
+		StringBuilder midBuilder = new StringBuilder();
+		for(Message id : params)
+		{
+			midBuilder.append(String.valueOf(id.mid));
+			midBuilder.append(",");
+		}
+		if(midBuilder.length()>0)
+			midBuilder.deleteCharAt(midBuilder.length()-1);
+
+		pairs.add(new BasicNameValuePair("mids", midBuilder.toString()));
+
+	}
+}

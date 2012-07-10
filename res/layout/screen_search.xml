@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_black" >
+        <ImageView
+            android:id="@+id/errorCaused"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_error"
+            android:visibility="invisible" />
+        
+        <ImageView
+            android:id="@+id/updatingImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible"
+            android:src="@anim/ic_spin_animation_white"/>
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/search_friends"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </FrameLayout>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_search"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ededed"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_input"
+        android:drawableLeft="@drawable/ic_search_field"
+        android:drawablePadding="3dp"
+        android:paddingRight="25dp"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:hint="@string/search" >
+        
+    </EditText>
+
+    <ImageView
+        android:id="@+id/clear_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="5dp"
+        android:visibility="invisible"
+        android:src="@drawable/ic_delete" />
+    
+
+</FrameLayout>
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ededed"
+    android:gravity="center"
+    android:padding="10dp"
+    android:text="@string/search_for_all_your_friends"
+    android:textColor="#666666"
+    android:textSize="16dp" />
+
+    <ListView
+        android:id="@+id/dialogList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:divider="#dfdfdf" 
+        android:descendantFocusability="beforeDescendants"
+        android:dividerHeight="1px">
+        
+    </ListView>
+
+</LinearLayout>

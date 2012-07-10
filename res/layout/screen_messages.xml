@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_black" >
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/messages"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/openNewDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:scaleType="center"
+            android:visibility="visible"
+            android:src="@drawable/ic_compose" />
+
+         <ImageView
+            android:id="@+id/errorCaused"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:visibility="invisible"
+            android:src="@drawable/ic_error" />
+        
+        <ImageView
+            android:id="@+id/updatingImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible"
+            android:src="@anim/ic_spin_animation_white"/>
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/dialogList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:divider="#dfdfdf" 
+        android:scrollingCache="true"
+        android:smoothScrollbar="true"
+        android:descendantFocusability="beforeDescendants"
+        android:dividerHeight="1px">
+        
+    </ListView>
+
+</LinearLayout>

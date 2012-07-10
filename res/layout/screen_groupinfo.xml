@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/backLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_black" >
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/messages"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+         <ImageView
+            android:id="@+id/errorCaused"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:visibility="invisible"
+            android:src="@drawable/ic_error" />
+                <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            android:duplicateParentState="true"
+            android:src="@drawable/ic_back_selector" />
+        <ImageView
+            android:id="@+id/updatingImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible"
+            android:src="@anim/ic_spin_animation_white"/>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/groupUsersLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/contactsLoadImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@anim/ic_spin_animation_blue"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/textChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_input"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/buttonChangeChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_button_selector"
+                android:enabled="false"
+                android:text="@string/change_chat"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowColor="#fff"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/sync_your_phone_contacts"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@drawable/text_blue_color"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/buttonAddPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_button_selector"
+                android:drawableLeft="@drawable/ic_add_participant"
+                android:text="@string/add_person"
+                android:textColor="#fff" />
+            
+                        <Button
+                            android:id="@+id/buttonLeaveChat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/bg_button_selector"
+                            android:text="@string/leave_chat"
+                            android:textColor="#fff" />
+
+            </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:focusable="false"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/dateHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:shadowColor="#fff"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:textColor="@color/conversation_time_date_color" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/messageFrame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateHeader"
+        android:orientation="horizontal" >
+
+        <ru.st1ng.vk.views.UserImageView
+            android:id="@+id/senderImage"
+            android:layout_width="@dimen/avatar_size_small"
+            android:layout_height="@dimen/avatar_size_small"
+            android:layout_gravity="bottom"
+            android:src="@drawable/im_nophoto"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/pendingSend"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:src="@anim/ic_spin_animation_blue" />
+
+        <TextView
+            android:id="@+id/timeLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="2dp"
+            android:shadowColor="#fff"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textColor="@color/conversation_time_date_color" />
+
+        <FrameLayout
+            android:id="@+id/messageContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/bubbleLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_msg_in_selector"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/messageText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:duplicateParentState="true"
+                    android:linksClickable="true"
+                    android:text="text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/messageInfoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="text 2"
+                    android:textColor="#FF2d63a0"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:id="@+id/attachesLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fwdLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/timeRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="2dp"
+            android:shadowColor="#fff"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textColor="@color/conversation_time_date_color" />
+    </LinearLayout>
+
+</RelativeLayout>

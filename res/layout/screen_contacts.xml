@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_black" >
+
+        <LinearLayout
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ToggleButton
+                android:id="@+id/toggleFriends"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:enabled="false"
+                android:background="@drawable/bg_contacts_selector"
+                android:textColor="@drawable/text_tab_label_color"
+                android:textOn="@string/friends" 
+                android:textOff="@string/friends"/>
+
+            <ToggleButton
+                android:id="@+id/toggleOnline"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@drawable/text_tab_label_color"
+                android:background="@drawable/bg_contacts_selector"
+                android:textOn="@string/online" 
+                android:textOff="@string/online"/>
+
+             <ToggleButton
+                android:id="@+id/toggleContacts"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@drawable/text_tab_label_color"
+                android:background="@drawable/bg_contacts_selector"
+                android:textOn="@string/contacts" 
+                android:textOff="@string/contacts"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/errorCaused"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_error"
+            android:visibility="invisible" />
+        
+        <ImageView
+            android:id="@+id/updatingImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible"
+            android:src="@anim/ic_spin_animation_white"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" 
+        android:gravity="center">
+
+        <ListView
+            android:id="@+id/dialogList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:divider="#dfdfdf"
+            android:dividerHeight="1px"
+            android:fastScrollEnabled="true" >
+        </ListView>
+
+        <FrameLayout
+            android:id="@+id/contactsFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:visibility="invisible"
+            android:layout_gravity="center">
+
+            <ListView
+                android:id="@+id/contactsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/synchronizeFrame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:visibility="invisible" >
+
+                <ImageView
+                    android:id="@+id/contactsLoadImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@anim/ic_spin_animation_blue"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/buttonSync"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button_selector"
+                    android:text="@string/sync_contacts"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:shadowColor="#fff"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="@string/sync_your_phone_contacts"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@drawable/text_blue_color" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

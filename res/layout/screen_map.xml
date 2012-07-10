@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_black" >
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/choose_location"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </FrameLayout>
+
+          <com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:apiKey="00xIu81RzE2J5DkRoTzEzsCo00Q58kQncRoGcgQ"
+    />
+          
+        <LinearLayout
+            android:id="@+id/widget_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shadow"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="3dp" >
+
+            <Button
+                android:id="@+id/okButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:background="@drawable/bg_button_selector"
+                android:text="@string/ok"
+                android:textColor="#fff" />
+
+            <Button 
+                android:id="@+id/cancelButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_selector"
+                android:text="@string/cancel"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+    <!-- 
+    	DEBUG KEY 00xIu81RzE2J5DkRoTzEzsCo00Q58kQncRoGcgQ -->
+</LinearLayout>

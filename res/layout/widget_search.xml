@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/widget_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shadow"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_input"
+            android:drawableLeft="@drawable/ic_search_field"
+            android:drawablePadding="3dp"
+            android:hint="@string/search"
+            android:inputType="text"
+            android:paddingRight="25dp" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/clear_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_delete"
+            android:visibility="invisible" />
+    </FrameLayout>
+	<TextView android:id="@+id/search_in_messages" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/bg_conversation_selector"
+	    android:paddingTop="20dp"
+	    android:paddingBottom="20dp"
+	    android:gravity="center"
+	    android:visibility="gone"
+	    android:textColor="@drawable/text_darkblue_color"
+	    android:text="@string/search_in_messages"/>
+</LinearLayout>

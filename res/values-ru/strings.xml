@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Чат ВКонтакте</string>
+    <string name="lang">ru</string>
+
+    <!-- Login screen -->
+    <string name="txt_signup">Зарегистрироваться</string>
+    <string name="txt_fastmessaging">Вы сможете бесплатно обмениваться мгновенными сообщениями с друзьями</string>
+    <string name="your_phone_number">Телефон или Email</string>
+    <string name="your_password">Ваш пароль</string>
+    <string name="log_in">Войти</string>
+    <string name="new_account">Новый аккаунт</string>
+    <string name="your_first_name">Ваше Имя</string>
+    <string name="your_last_name">Ваша Фамилия</string>
+    <string name="message_received">Пришло новое сообщение</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="log_off">Выйти из аккаунта</string>
+
+    <!-- TabHost -->
+    <string name="messages">Сообщения</string>
+    <string name="contacts">Контакты</string>
+    <string name="search">Поиск</string>
+    <string name="settings">Настройки</string>
+    <string name="registration_sent">Ваш запрос на регистрацию принят. СМС с кодом подтверждения выслан на указанный вами номер.</string>
+    <string name="sms_code">Код из СМС</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="password_not_match">Введеные пароли не совпадают</string>
+    <string name="successfuly_registered">Регистрация прошла успешно! Теперь вы можете войти под своим аккаунтом</string>
+    <string name="new_messages">Новые сообщения</string>
+
+    <!-- ErrorCodes -->
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="network_unavailable">Сеть недоступна. Проверьте настройки интернета и повторите еще раз.</string>
+    <string name="wrong_user_pass">Неверные данные. Пожалуйста, убедитесь, что телефон или email и пароль введены правильно и повторите попытку.</string>
+    <string name="network_unavailable_show_cached">Сеть недоступна. Показаны только сохраненные в памяти записи.</string>
+    <string name="already_registered_1004">Этот номер телефона уже зарегистрирован на другого пользователя.</string>
+    <string name="e176_cannot_add_user">Вы не можете добавить данного пользователя в друзья из за настроек приватности пользователя.</string>
+    <string name="e175_cannot_add_user_blacklist">Вы не можете добавить пользователя в друзья, т.к. вы находитесь в его черном списке.</string>
+    <string name="e15_access_denied">Доступ запрещен.</string>
+	<string name="e9_floot_control">Флуд контроль - вы уже посылали данное сообщение</string>
+	<string name="e100_phone_incorrect">Неправильно введен номер телефона</string>
+    
+    <!-- Date Strings -->
+    <string name="yesterday">вчера</string>
+    <string name="today">сегодня</string>
+    <string name="loading">Загрузка…</string>
+    <string name="at_time">в</string>
+    <string name="was_female">была в сети</string>
+    <string name="was_male">был в сети</string>
+    <string name="minutes">минут</string>
+    <string name="ago">назад</string>
+
+    <!-- Messages -->
+    <string name="document">Документ</string>
+    <string name="documents">Документов</string>
+    <string name="write_a_message">Написать сообщение</string>
+    <string name="writing">Собеседник набирает сообщение…</string>
+    <string name="send">Отпр.</string>
+
+    <!-- Contacts -->
+    <string name="friends">Друзья</string>
+    <string name="online">Онлайн</string>
+    <string name="search_friends">Поиск друзей</string>
+    <string name="sendmenotifications">Присылать мне уведомления</string>
+    <string name="take_photo">Сделать снимок с камеры</string>
+    <string name="choose_existing_photo">Выбрать фото из галереи</string>
+    <string name="uploading">Загрузка файлов на сервер</string>
+    <string name="downloading">Загрузка файла…</string>
+    <string name="error_downloading">Ошибка при загрузке файла</string>
+    <string name="app_not_found">С данным типом файла не связано не одно приложение на вашем устройстве</string>
+    <string name="search_for_all_your_friends">Вы можете искать своих друзей и знакомых среди всех пользователей</string>
+    <string name="show_me_online">Показывать меня Онлайн</string>
+
+    <string-array name="show_me_online_entries">
+        <item>Всегда, когда включено устройство</item>
+        <item>Только когда запущено приложение</item>
+        <item>Никогда</item>
+    </string-array>
+
+    <string name="attach_location">Местоположение</string>
+    <string name="choose_location">Выберите место</string>
+    <string name="cancel">Отмена</string>
+    <string name="ok">Ok</string>
+    <string name="license">Марат Галимзянов\nЧат ВКонтакте, 2012</string>
+    <string name="leave_feedback_on_google_play">Оставить отзыв на Google Play</string>
+    <string name="contact_author">Связь с автором</string>
+    <string name="sync_contacts">Синхронизировать контакты</string>
+    <string name="sync_your_phone_contacts">Вы можете синхронизировать список друзей VK с записной книжкой Вашего телефона</string>
+    <string name="forward">Переслать</string>
+    <string name="choose_recepient">Выберите собеседника</string>
+    <string name="forwarded_messages_label">Пересланные\nСообщения</string>
+    <string name="call">Позвонить на</string>
+    <string name="send_message">Отправить сообщение</string>
+    <string name="friend_requests">Заявки в друзья</string>
+    <string name="friend_suggest">Возможные друзья</string>
+    <string name="new_version_available">Доступно обновление!</string>
+    <string name="update">Обновить</string>
+    <string name="changelog">Список изменений:</string>
+    <string name="i_need_your_help">Мне нужна ваша помощь!</string>
+    <string name="please_rate">Если вам нравится данная программа, пожалуйста, оцените его на Google Play. Ваша помощь очень важна для дальнейшего развития программы. Спасибо!</string>
+    <string name="rate">Оценить!</string>
+    <string name="add_friend">Добавить в друзья</string>
+    <string name="decline_request">Отклонить заявку</string>
+    <string name="please_wait">Пожалуйста подождите…</string>
+    <string name="successfuly_canceled">Заявка отклонена</string>
+    <string name="successfuly_submited">Заявка принята</string>
+    <string name="successfuly_send_request">Заявка отправлена</string>
+    <string name="chat_changed_success">Название беседы изменено</string>
+    <string name="active_users">участников беседы</string>
+    <string name="successfuly_remove_user">Пользователь удален из этой беседы.</string>
+    <string name="messages_deleted">Сообщения удалены!</string>
+    <string name="are_you_sure_you_want_to_leave">Вы уверены, что хотите покинуть данную беседу?</string>
+    <string name="font_size">Размер шрифта</string>
+    <string name="change_chat">Изменить название беседы</string>
+    <string name="add_person">Добавить собеседника</string>
+    <string name="leave_chat">Покинуть беседу</string>
+
+    <string-array name="change_photo">
+        <item>Выбрать фото из галереи</item>
+        <item>Сделать снимок с камеры</item>
+    </string-array>
+
+    <string name="notification_settings">Настройки оповещений</string>
+    <string name="sound">Оповещать звуком</string>
+    <string name="vibrate">Оповещать вибрацией</string>
+
+    <string-array name="font_sizes">
+        <item>Мелкий</item>
+        <item>Средний</item>
+        <item>Крупный</item>
+    </string-array>
+
+    <string name="forwarded_message">пересланное сообщение</string>
+    <string name="forwarded_messages">пересланных сообщения</string>
+    <string name="found_users">Найденные люди</string>
+    <string name="search_in_messages">Поиск в сообщениях</string>
+    <string name="search_in_dialogs">Поиск в диалогах</string>
+    <string name="error">Ошибка</string>
+    <string name="message_not_sent">Ошибка связи. Сообщение не отправлено.</string>
+    <string name="resend">Переотправить</string>
+    <string name="user_not_registered">Пользователь ещё не зарегистрирован. Вы можете отправить ему приглашение </string>
+    <string name="send_invintation">Отправить приглашение</string>
+    <string name="invintation_text">Приглашаю тебя в социальную сеть ВКонтакте!\nРегистрация:http://vk.com/join</string>
+
+    	<string name="remove_from_friends">Удалить из друзей</string>
+	<string name="please_confirm">Пожалуйста подтвердите</string>
+	<string name="do_you_really_want_to_remove_friend">Вы действительно хотите удалить этого пользователя из друзей?</string>
+    <string name="your_phone_number_signup">Номер телефона</string>
+    <string name="input_your_password">Введите пароль</string>
+        <string name="delete_dialog">Удалить переписку</string>
+    <string name="successfuly_deleted_user">Пользователь удален из друзей</string>
+    
+</resources>

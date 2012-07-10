@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/bg_login_l_active" android:state_active="true"/>
+    <item android:drawable="@drawable/bg_login_l_active" android:state_focused="true"/>
+    <item android:drawable="@drawable/bg_login_l"/>
+
+</selector>

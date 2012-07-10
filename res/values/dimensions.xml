@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_size">110dp</dimen>
+    <dimen name="avatar_size">50dp</dimen>
+    <dimen name="avatar_size_small">30dp</dimen>
+    <dimen name="font_size_small">6sp</dimen> 
+    <dimen name="font_size_medium">8sp</dimen>
+    <dimen name="font_size_large">11sp</dimen>
+</resources>

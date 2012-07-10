@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:focusable="false" >
+
+    <ru.st1ng.vk.views.UserImageView
+        android:id="@+id/dialogIcon"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="2dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/im_avatar_empty"
+        android:focusable="false"
+        android:paddingBottom="2px"
+        android:scaleType="fitXY"
+        android:src="@drawable/im_nophoto" />
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@+id/dialogIcon"
+        android:drawableRight="@drawable/ic_online_list"
+        android:focusable="false"
+        android:layout_marginLeft="4dp"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@drawable/text_dialogs_name_color" />
+
+    <TextView
+        android:id="@+id/dialogDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+		android:focusable="false"
+        android:textColor="@drawable/text_dialogs_date_color" />
+
+    <TextView
+        android:id="@+id/dialogBody"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/dialogIcon"
+        android:layout_below="@+id/dialogTitle"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/dialogIcon"
+        android:drawableLeft="@drawable/im_nophoto"
+        android:drawablePadding="5dp"
+        android:paddingLeft="1dp"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:paddingBottom="2dp"
+        android:text="Body"
+        android:textColor="@drawable/text_dialogs_body_color" />
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:focusable="false" >
+
+    <ImageView
+        android:id="@+id/icon" 
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/im_avatar_empty"
+        android:focusable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/im_nophoto"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@+id/icon"
+        android:drawableRight="@drawable/ic_online_list"
+        android:focusable="false"
+        android:layout_marginLeft="4dp"
+        android:maxLines="1"
+        style="@style/NotificationTitle"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        style="@style/NotificationText"
+		android:focusable="false" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/icon"
+        android:drawablePadding="2dp"
+        style="@style/NotificationText"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingBottom="2dp"/>
+</RelativeLayout>

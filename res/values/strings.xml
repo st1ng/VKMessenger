@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="photos_cache_dir">/Android/data/ru.st1ng.vk/avatarscache</string>
+    <string name="photos_cache_dir_old">/Android/data/ru.st1ng.vk/photocache</string>
+    <string name="camera_cache_dir">/Android/data/ru.st1ng.vk/cameracache</string>
+    
+    <string name="docs_dir">/Android/data/ru.st1ng.vk/docs</string>
+    <string name="lang">en</string>
+    <string name="app_name">Vk.com Messenger</string>
+    <string name="txt_signup">Sign up</string>
+    <string name="txt_fastmessaging">For fast, free and convenient messaging with friends and contacts</string>
+    <string name="your_phone_number">Your Phone or Email</string>
+    <string name="your_password">Your Password</string>
+    <string name="log_in">Log in</string>
+    <string name="new_account">New Account</string>
+    <string name="your_first_name">Your First Name</string>
+    <string name="your_last_name">Your Last Name</string>
+    <string name="message_received">New message received</string>
+    <string name="confirm">Confirm</string>
+    <string name="log_off">Log Off</string>
+    <string name="registration_sent">Your registration request was sent successfuly. SMS with confirmation code sent to provided number</string>
+    <string name="sms_code">Code from SMS</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="password_not_match">Passwords not match</string>
+    <string name="successfuly_registered">Successfully registered</string>
+    <string name="new_messages">Incoming messages</string>
+
+    <!-- ErrorCodes -->
+    <string name="unknown_error">Unknown error</string>
+    <string name="network_unavailable">Network unavailable. Please try again later.</string>
+    <string name="wrong_user_pass">Authorization error. Please make sure that you\'ve entered the correct phone or email and password and try again.</string>
+    <string name="network_unavailable_show_cached">Network unavailable. Showing only cached results.</string>
+    <string name="already_registered_1004">This phone used by another user.</string>
+    <string name="e176_cannot_add_user">Cannot add this user to list of friends due to privacy settings</string>
+    <string name="e175_cannot_add_user_blacklist">Cannot add this user to friends as they have put you on their blacklist.</string>
+    <string name="e15_access_denied">Access denied</string>
+	<string name="e9_floot_control">Flood control</string>
+	<string name="e100_phone_incorrect">Phone incorrect</string>
+
+		<!-- TabHost -->
+    <string name="messages">Messages</string>
+    <string name="contacts">Contacts</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+
+    <!-- Date Strings -->
+    <string name="yesterday">yesterday</string>
+    <string name="today">today</string>
+    <string name="loading">Loading</string>
+    <string name="at_time">at</string>
+    <string name="was_female">was last seen</string>
+    <string name="was_male">was last seen</string>
+    <string name="minutes">minutes</string>
+    <string name="ago">ago</string>
+
+    <!-- Messages -->
+    <string name="document">Document</string>
+    <string name="documents">Document</string>
+    <string name="write_a_message">Write a message</string>
+    <string name="writing">User is typing…</string>
+    <string name="send">Send</string>
+
+    <!-- Contacts -->
+    <string name="friends">Friends</string>
+    <string name="online">Online</string>
+    <string name="search_friends">Search Friends</string>
+    <string name="sendmenotifications">Send me notifications</string>
+    <string name="take_photo">Take photo</string>
+    <string name="choose_existing_photo">Choose existing photo</string>
+    <string name="uploading">Uploading files</string>
+    <string name="downloading">Downloading…</string>
+    <string name="error_downloading">Downloading failed</string>
+    <string name="app_not_found">There is no app to open file on your device</string>
+    <string name="search_for_all_your_friends">"Search for your friends and contacts among all registred users "</string>
+    <string name="show_me_online">Show me online</string>
+
+    <string-array name="show_me_online_entries">
+        <item>Always device turned on</item>
+        <item>Only when app is opened</item>
+        <item>Never</item>
+    </string-array>
+
+    <string name="attach_location">Location</string>
+    <string name="choose_location">Choose Location</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="license">Marat Galimzyanov\nVk.com Messenger, 2012</string>
+    <string name="leave_feedback_on_google_play">Leave feedback on Google Play</string>
+    <string name="contact_author">Contact author</string>
+    <string name="sync_contacts">Sync contacts</string>
+    <string name="sync_your_phone_contacts">Sync your phone contacts with your VK friends list</string>
+    <string name="forward">Forward</string>
+    <string name="delete">Delete</string>
+    <string name="choose_recepient">Choose Recepient</string>
+    <string name="forwarded_messages_label">Forwarded\nMessages</string>
+    <string name="call">Call</string>
+    <string name="send_message">Send Message</string>
+    <string name="friend_requests">Friend requests</string>
+    <string name="friend_suggest">People you may know</string>
+    <string name="new_version_available">App Update available!</string>
+    <string name="update">Update</string>
+    <string name="changelog">Changelog:</string>
+    <string name="i_need_your_help">I need your help!</string>
+    <string name="please_rate">If you really like my app, please Rate it on Google Play!\nThanks</string>
+    <string name="rate">Rate!</string>
+    <string name="add_friend">Add Friend</string>
+    <string name="decline_request">Decline Request</string>
+    <string name="please_wait">Please Wait…</string>
+    <string name="successfuly_canceled">Request successfully declined</string>
+    <string name="successfuly_submited">Request successfully approved</string>
+    <string name="successfuly_send_request">Request successfully sent</string>
+    <string name="chat_changed_success">Chat name changed successfully</string>
+    <string name="active_users">active users</string>
+    <string name="successfuly_remove_user">User successfully removed from this chat</string>
+    <string name="messages_deleted">Messages deleted!</string>
+    <string name="are_you_sure_you_want_to_leave">Are you sure you want to leave this chat?</string>
+
+    <string-array name="font_sizes">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <string name="font_size">Font size</string>
+    <string name="change_chat">Change chat</string>
+    <string name="add_person">Add person</string>
+    <string name="leave_chat">Leave chat</string>
+
+    <string-array name="change_photo">
+        <item>Choose existing photo</item>
+        <item>Take photo</item>
+    </string-array>
+
+    <string name="notification_settings">Notification Settings</string>
+    <string name="sound">Sound</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="forwarded_message">forwarded message</string>
+    <string name="forwarded_messages">forwarded messages</string>
+    <string name="found_users">Found users</string>
+    <string name="search_in_messages">Search in Messages</string>
+    <string name="search_in_dialogs">Search in Dialogs</string>
+    <string name="error">Error</string>
+    <string name="message_not_sent">Message not sent due to network error</string>
+    <string name="resend">Resend</string>
+    <string name="user_not_registered">User is not registred yet. You can send an invitation. </string>
+	<string name="send_invintation">Send invitation</string>
+	<string name="invintation_text">Hello! I invite you to largest Russian social network service Vk.com!\nYou can sign up here: http://vk.com/join</string>
+	<string name="remove_from_friends">Delete friend</string>
+	<string name="please_confirm">Please confirm</string>
+	<string name="do_you_really_want_to_remove_friend">Do you really want to delete friend?</string>
+	<string name="do_you_really_want_to_delete_dialog">Do you really want to delete conversation?</string>
+	<string name="your_phone_number_signup">Your Phone Number</string>
+    <string name="input_your_password">Input Your Password</string>
+    <string name="delete_dialog">Delete Dialog</string>
+    <string name="successfuly_deleted_user">Friend successfully deleted</string>
+		</resources>

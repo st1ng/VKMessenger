@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff" >
+
+    <ru.st1ng.vk.views.UserImageView
+        android:id="@+id/dialogIcon"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/im_avatar_empty"
+        android:paddingBottom="2px"
+        android:scaleType="fitXY"
+        android:src="@drawable/im_nophoto" />
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/dialogIcon"
+        android:layout_alignTop="@+id/dialogIcon"
+        android:layout_toRightOf="@+id/dialogIcon"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="Marat"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@drawable/text_dialogs_name_color" />
+    
+    <ImageView
+        android:id="@+id/dialogOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imageDelete"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@+id/dialogTitle"
+        android:layout_alignTop="@+id/dialogTitle"
+        android:src="@drawable/ic_online_list"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#d8dde3" 
+        android:layout_below="@+id/dialogIcon"/>
+
+    <ImageView
+        android:id="@+id/imageDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dialogIcon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/ic_delete" />
+
+</RelativeLayout>

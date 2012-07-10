@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/frameBack"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_black" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/messages"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/onlineImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_online" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:duplicateParentState="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_back_selector" />
+
+        <ImageView
+            android:id="@+id/errorCaused"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_error"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/updatingImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@anim/ic_spin_animation_white"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ru.st1ng.vk.views.WebImageView
+                android:id="@+id/contactImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_photo_placeholder"
+                android:padding="5dp" />
+
+            <ImageView
+                android:id="@+id/contactsLoadImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@anim/ic_spin_animation_blue"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/buttonSendMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_selector"
+                android:text="@string/send_message"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/buttonAddFriend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_selector"
+                android:text="@string/add_friend"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/buttonDeleteDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_selector"
+                android:text="@string/delete_dialog"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/removeFromFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:shadowColor="#fff"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="@string/remove_from_friends"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@drawable/text_darkblue_color" />
+
+</LinearLayout>

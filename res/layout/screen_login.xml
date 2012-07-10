@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:src="@drawable/im_logo" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/phoneInput"
+                        android:layout_width="0dp"
+                        android:paddingLeft="21dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="6"
+                        android:inputType="textEmailAddress"
+                        android:imeOptions="actionNext"
+                        android:background="@drawable/bg_login_r_selector"
+                        android:hint="@string/your_phone_number" />
+ 
+                    <ImageView
+                        android:id="@+id/phoneImage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/im_phone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/passImage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/im_pass" />
+
+                    <EditText
+                        android:id="@+id/passInput"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="6"
+                      	android:paddingLeft="21dp"
+                        android:background="@drawable/bg_login_l_selector"
+                        android:hint="@string/your_password"
+                        android:inputType="textPassword"
+                        android:imeOptions="actionGo" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:id="@+id/view4"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/loginButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="6"
+                        android:background="@drawable/bg_button_login_selector"
+                        android:enabled="false"
+                        android:shadowColor="#578abc"
+                        android:shadowDy="-1"
+                        android:shadowRadius="1"
+                        android:state_enabled="false"
+                        android:text="@string/log_in"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@drawable/text_blue_white_color" />
+
+                    <ImageView 
+                        android:id="@+id/progressImage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:visibility="invisible"
+                        android:src="@anim/ic_spin_animation_blue" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/signupFrame"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/im_signup_background_selector"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:duplicateParentState="true"
+            android:orientation="vertical" >
+
+            <ru.st1ng.vk.views.ShadowTextView
+                android:id="@+id/signupRegisterText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_signup"
+                android:gravity="center"
+                android:shadowDy="1"
+                android:shadowColor="#fff"
+                android:shadowRadius="1"
+                android:textColor="@drawable/text_blue_color"
+	            android:duplicateParentState="true"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ru.st1ng.vk.views.ShadowTextView
+                android:id="@+id/signupUnderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:shadowColor="#fff"
+                android:shadowDy="1"
+                android:shadowRadius="0.5"
+                android:text="@string/txt_fastmessaging"
+                android:textColor="@drawable/text_blue_color" />
+		
+        </LinearLayout>
+		
+    </FrameLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp"
+    android:focusable="false" >
+
+    <TextView
+        android:id="@+id/dateHeader"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/conversation_time_date_color"
+        android:shadowColor="#fff"
+        android:shadowRadius="1"
+        android:shadowDy="1"
+        ></TextView>
+
+    <LinearLayout
+        android:id="@+id/messageFrame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateHeader"
+        android:orientation="horizontal" >
+
+        <ru.st1ng.vk.views.UserImageView
+            android:id="@+id/senderImage"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:layout_gravity="bottom"
+            android:src="@drawable/im_nophoto"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/pendingSend"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:src="@anim/ic_spin_animation_blue" />
+
+    <TextView
+        android:id="@+id/timeLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/conversation_time_date_color"
+        android:shadowColor="#fff"
+        android:shadowRadius="1"
+        android:shadowDy="1"
+        android:text="12.02"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="2dp"
+        />
+
+    <FrameLayout 
+        android:id="@+id/messageContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/bubbleLayout"
+	        android:paddingLeft="11dp"
+	        android:background="@drawable/bg_msg_out_selector"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/messageText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:duplicateParentState="true"
+	            android:autoLink="all"
+	            android:linksClickable="true"
+	            android:text="Если бы "
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="#000"
+	            android:textSize="18dp" />
+			
+	    </LinearLayout>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/timeRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/conversation_time_date_color"
+        android:shadowColor="#fff"
+        android:shadowRadius="1"
+        android:shadowDy="1"
+        android:text="12:02"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="2dp"
+        />
+    
+</LinearLayout>
+</RelativeLayout>
