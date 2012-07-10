@@ -27,8 +27,8 @@ import android.util.Log;
  * Abstract AsyncTask.
  */
 public abstract class BasicAsyncTask<T,V,U> extends AsyncTask<T,V,U> {
-	public static final String CLIENT_ID = "2964648";
-	public static final String CLIENT_SECRET = "0xcXDucZ2aygCiEoGWE4";
+	public static final String CLIENT_ID = PASTE YOUR VK APP ID HERE;
+	public static final String CLIENT_SECRET = PASTE YOUR VK APP SECRET HERE;
 	public static final String SCOPE = "friends,messages,nohttps,offline,notify,photos,video,docs,audio";
 	public static final String API_URL = "http://api.vk.com/method/";
 	public static final String API_URL_HTTPS = "https://api.vk.com/method/";

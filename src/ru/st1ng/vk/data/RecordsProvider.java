@@ -1495,7 +1495,7 @@ public class RecordsProvider extends Service {
         	GCMRegistrar.checkManifest(this);
         	final String regId = GCMRegistrar.getRegistrationId(this);
         	if (regId.equals("")) {
-        	  GCMRegistrar.register(this, "489108889244");
+        	  GCMRegistrar.register(this, PASTE YOUR GCMPROJECTID HERE);
         	} else {
         	  Log.v(VKApplication.TAG, "GCM Already registered");
         	}
